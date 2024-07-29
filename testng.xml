@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- <suite name="Suite"> 
+  <test thread-count="5" name="Test">
+    <classes>
+    
+    <class name="com.ecommerce.testcases.LoginPageTest"/>
+    <class name="com.ecommerce.testcases.EcommerceEToE"/>
+      <class name="com.ecommerce.testcases.AccountPageTest"/>
+      <class name="com.ecommerce.testcases.EndToEndTest"/>
+     <class name="com.ecommerce.testcases.ProductPageTest"/>
+    </classes>
+  </test> 
+</suite> -->
+
+<!-- 
+This suite is active and will execute the tests specified below 
+-->
+<suite name="Suite">
+  <!-- Including listeners to capture test execution events -->
+  <listeners>
+    <listener class-name="com.ecommerce.utility.ListenerClass"></listener>
+  </listeners>
+  
+  <test name="Test">
+    <!-- Specifying browser parameter to be used in tests -->
+    <parameter name="browser" value="Chrome"></parameter>
+    
+    <classes>
+      <!-- Only the HomePageTest class is specified to run -->
+      <class name="com.ecommerce.testcases.HomePageTest"/>
+    </classes>
+  </test>
+</suite>

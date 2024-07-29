@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <!-- Report theme: standard, dark -->
+        <theme>standard</theme>
+    
+        <!-- Document encoding, defaults to UTF-8 -->
+        <encoding>UTF-8</encoding>
+        
+        <!-- Protocol for scripts and stylesheets, defaults to https -->
+        <protocol>https</protocol>
+        
+        <!-- Title of the document -->
+        <documentTitle>MyEcommerceProject</documentTitle>
+        
+        <!-- Report name displayed at top-nav -->
+        <reportName>
+            <![CDATA[
+                MyEcommerceProject Report  
+            ]]>
+        </reportName>
+        
+        <!-- Location of charts in the test view: top, bottom -->
+        <testViewChartLocation>bottom</testViewChartLocation>
+      
+        <!-- Custom JavaScript -->
+        <scripts>
+            <![CDATA[
+                $(document).ready(function() {
+                   
+                });
+            ]]>
+        </scripts>
+        
+        <!-- Custom styles -->
+        <styles>
+            <![CDATA[
+               
+            ]]>
+        </styles>
+    </configuration>
+</extentreports>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [CrossBrowser]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" parallel="tests" name="FirefoxTest(failed)">
+    <parameter name="browser" value="FireFox"/>
+    <classes>
+      <class name="com.ecommerce.testcases.ProductPageTest">
+        <methods>
+          <include name="loadConfig"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="productAvailable"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- com.ecommerce.testcases.ProductPageTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+  <test thread-count="1" parallel="tests" name="EdgeTest(failed)">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="com.ecommerce.testcases.ProductPageTest">
+        <methods>
+          <include name="loadConfig"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="productAvailable" invocation-numbers="0"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- com.ecommerce.testcases.ProductPageTest -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+</suite> <!-- Failed suite [CrossBrowser] -->
